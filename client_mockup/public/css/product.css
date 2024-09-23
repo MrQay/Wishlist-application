@@ -1,0 +1,108 @@
+.product-title {
+    color: #5d1049; 
+    margin: 10px 0 20px;
+    font-size: 2em;
+}
+p {
+    line-height: 1.6;
+}
+.buy-btn {
+    display: inline-block;
+    background: #0f6ab4; 
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.buy-btn:hover {
+    background: #0d5a9b; 
+}
+
+.product-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .product-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="file"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-group button {
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+  
+  .button-group {
+    text-align: right;
+  }
+  
+  .button-group .save,
+  .button-group .cancel {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel {
+    background-color: #f44336;
+    color: white;
+    margin-left: 10px;
+  }
+  
+/* Star ranking system styles */
+.star-rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+  }
+  
+  .star-rating label {
+    padding: 0 5px;
+    font-size: 2rem;
+    color: #444;
+    transition: all 0.2s;
+  }
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star-rating input:checked ~ label,
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: #fd4;
+  }
+  
+  

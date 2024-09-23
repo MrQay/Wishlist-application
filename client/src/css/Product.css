@@ -1,0 +1,260 @@
+/* Container styling for the product form */
+.product-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for the form header */
+.form-header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* General form group styling */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Label styling within form groups */
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 18px;
+}
+
+/* Input field styling */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  padding-left: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+  height: 40px;
+}
+
+/* Focus state for input fields */
+.form-control:focus {
+  border-color: #5a9ced;
+}
+
+/* Specific style for text area to increase its height */
+.form-control.desc {
+  height: 120px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Icon styling within form fields */
+.fa-icon {
+  position: absolute;
+  top: 70%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #3b5d50;
+}
+
+/* Special positioning for link icon to align it properly */
+.fa-link {
+  top: 50%;
+}
+
+/* Adjust position for align left icon in description textarea */
+.fa-align-left {
+  top: 60%;
+}
+
+/* Styling for input groups to handle icons and fetch button */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Ensures the form control takes up available space */
+.input-group .form-control {
+  flex-grow: 1;
+  border-radius: 8px 0 0 8px;
+}
+
+/* Styling for the fetch button positioned within the input group */
+.input-group .fetch-button {
+  right: 0;
+  border-radius: 0 8px 8px 0;
+  margin: 0;
+}
+
+/* Positioning for the icon within the input group */
+.input-group .fa-icon {
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+}
+
+/* Padding adjustment for form control to prevent text overlap with icon */
+.input-group .form-control {
+  padding-left: 2.5rem;
+}
+
+/* Fetch button styling */
+.fetch-button {
+  background-color: #3b5d50;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Pill-shaped border */
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  outline: none;
+  font-weight: bold;
+}
+
+/* Hover state for fetch button */
+.fetch-button:hover {
+  background-color: #43A047;
+}
+
+/* Adjust size for FontAwesome icons used inside buttons */
+.fetch-button .svg-inline--fa {
+  width: 1em;
+  height: 1em;
+}
+
+/* Styling for the image upload container with a dotted border */
+.image-upload-container {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-top: 15px;
+}
+
+/* Flex container for quantity adjustment buttons */
+.quantity-input {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure that the quantity input does not grow and is centered */
+.quantity-input .form-control {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+/* Quantity buttons styling */
+.quantity-input .btn-quantity {
+  flex: 0 0 auto;
+  margin: 0 5px;
+}
+
+/* Alignment for buttons within the form */
+.button-group {
+  text-align: -webkit-auto;
+}
+
+/* Common styling for both save and cancel buttons */
+.btn.save-button,
+.btn.cancel-button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-weight: 600;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+
+/* Specific styling for the save button */
+.btn.save-button {
+  background-color: #3b5d50;
+  color: white;
+}
+
+/* Specific styling for the cancel button */
+.btn.cancel-button {
+  background-color: #ab453f;
+  color: white;
+}
+
+/* Modal header styling */
+.modal-header {
+  background-color: #f6d4e0;
+}
+
+/* Modal title styling */
+.modal-title {
+  color: #d45f80;
+}
+
+/* Modal body styling */
+.modal-body {
+  background-color: #f3d9e2;
+  text-align: center;
+}
+
+/* Modal footer styling */
+.modal-footer {
+  background-color: #f6d4e0;
+}
+
+/* Modal content animation */
+.modal-content {
+  animation: modalEntrance 0.5s ease-out;
+}
+
+/* Keyframes for modal entrance animation */
+@keyframes modalEntrance {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Styling for the product image */
+.product-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+/* Star rating icons styling */
+.star-rating .fa-star,
+.star-rating .fa-star-half-stroke {
+  font-size: 24px;
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+/* Disabling hover effect on stars for a static display */
+.star-rating .fa-star:hover,
+.star-rating .fa-star-half-stroke:hover {
+  transform: none;
+}
+
